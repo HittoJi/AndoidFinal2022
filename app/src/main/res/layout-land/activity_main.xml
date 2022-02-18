@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    class="com.example.myproyect_2022.FragmentHome"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"/>-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/headFrag"
+        android:name="com.example.myproyect_2022.FragmentHome"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/allfavorites"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="165dp"
+            android:background="@drawable/roundedbutton"
+            app:lottie_rawRes="@raw/star" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/comicFragment"
+        android:name="com.example.myproyect_2022.ComicFragment"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"/>
+</LinearLayout>

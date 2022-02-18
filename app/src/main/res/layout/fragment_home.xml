@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentHome"
+    android:background="#000000">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="534dp"
+        android:gravity="center"
+        tools:ignore="MissingConstraints">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/moreInfoCharacter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="30dp"
+            android:visibility="gone"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/cardImgHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/nameHome"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="175dp"
+                android:background="#000000"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="Spider-Man"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/starAnimation"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="260dp"
+                android:layout_marginTop="165dp"
+                app:lottie_rawRes="@raw/star" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="215dp"
+                android:background="#FF0000"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:scrollbars="vertical"
+                android:text="Promotion an ourselves up otherwise my. High what each snug rich far yet easy. In companions inhabiting mr principles at insensible do. Heard their sex hoped enjoy vexed child for. Prosperous so occasional assistance it discovered especially no. Provision of he residence consisted up in "
+                android:textColor="#FFFFFF"
+                android:padding="5dp"/>
+
+            <Button
+                android:id="@+id/btnClousPopUp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="265dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/roundedbutton"
+                android:gravity="center"
+                android:text="X"
+                android:textSize="15dp" />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

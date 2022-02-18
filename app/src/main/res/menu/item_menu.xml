@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_character"
+        android:title="Character"
+        android:icon="@drawable/ic_comic"/>
+
+    <item android:id="@+id/nav_character2"
+        android:title="Character"
+        android:icon="@drawable/ic_comic"/>
+
+    <item android:id="@+id/nav_character3"
+        android:title="Character"
+        android:icon="@drawable/ic_comic"/>
+
+    <item android:id="@+id/nav_character4"
+        android:title="Character"
+        android:icon="@drawable/ic_comic"/>
+
+    <item android:id="@+id/nav_character5"
+        android:title="Character"
+        android:icon="@drawable/ic_comic"/>
+
+    <item android:id="@+id/nav_character6"
+        android:title="Character"
+        android:icon="@drawable/ic_comic"/>
+
+
+</menu>
